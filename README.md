@@ -14,9 +14,9 @@ The Model Context Protocol (MCP) is an **open-source standard for connecting AI 
 
 **Why MCP matters:**
 
-- **Developers** — reduces development time and complexity when building or integrating AI applications or agents.
-- **AI applications or agents** — gives them access to an ecosystem of data sources, tools and apps, which enhances their capabilities and improves the end-user experience.
-- **End-users** — results in more capable AI applications that can access user data and take actions on the user's behalf when necessary.
+- **Developers** — MCP reduces development time and complexity when building, or integrating with, an AI application or agent.
+- **AI applications or agents** — MCP gives them access to an ecosystem of data sources, tools and apps, which enhances their capabilities and improves the end-user experience.
+- **End-users** — MCP results in more capable AI applications or agents that can access user data and take actions on the user's behalf when necessary.
 
 MCP is an open protocol supported across a wide range of clients and servers — AI assistants like Claude and ChatGPT, and tools like Visual Studio Code, Cursor, and MCPJam all support MCP, so you can build once and integrate everywhere.
 
@@ -24,13 +24,13 @@ MCP is an open protocol supported across a wide range of clients and servers —
 
 An MCP server exposes functionality through **three core building blocks (primitives)**, confirmed from the official documentation ("Architecture overview"):
 
-| Primitive | What it is | Who controls it |
-| --- | --- | --- |
-| **Tools** | Executable functions that AI applications can invoke to perform actions (e.g. file operations, API calls, database queries) | **Model** |
-| **Resources** | Data sources that provide contextual information to AI applications (e.g. file contents, database records, API responses) | **Application** |
-| **Prompts** | Reusable templates that help structure interactions with language models (e.g. system prompts, few-shot examples) | **User** |
+| Primitive | What it is | Who controls it | Examples |
+| --- | --- | --- | --- |
+| **Tools** | Executable functions that AI applications can invoke to perform actions (e.g. file operations, API calls, database queries) | **Model** | Querying a database, running a search, executing file operations |
+| **Resources** | Data sources that provide contextual information to AI applications (e.g. file contents, database records, API responses) | **Application** | File contents, database records, API responses |
+| **Prompts** | Reusable templates that help structure interactions with language models (e.g. system prompts, few-shot examples) | **User** | System prompts, few-shot examples for interacting with tools |
 
-A useful way to remember it: **tools are *model-initiated actions*, resources are *application-supplied context*, and prompts are *user-requested workflows*.** Each primitive type has associated methods for discovery (`*/list`), retrieval (`*/get`), and in some cases execution (`tools/call`). An MCP server also exposes client-side primitives: elicitation (letting the server ask the user for input) and sampling (deprecated as of protocol version 2026-07-28).
+A useful way to remember it: **tools are *model-initiated actions*, resources are *application-supplied context*, and prompts are *user-requested workflows*.** Each primitive type has associated methods for discovery (`*/list`), retrieval (`*/get`), and in some cases, execution (`tools/call`). An MCP server also exposes client-side primitives: elicitation (letting the server ask the user for input) and sampling (deprecated as of protocol version 2026-07-28).
 
 ## Sources
 
