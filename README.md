@@ -26,9 +26,9 @@ An MCP server exposes functionality through **three core building blocks (primit
 
 | Primitive | What it is | Who controls it | Examples |
 | --- | --- | --- | --- |
-| **Tools** | Executable functions that AI applications can invoke to perform actions (e.g., file operations, API calls, database queries) | **Model** | Querying a database, running a search, executing file operations |
-| **Resources** | Data sources that provide contextual information to AI applications (e.g., file contents, database records, API responses) | **Application** | File contents, database records, API responses |
-| **Prompts** | Reusable templates that help structure interactions with language models (e.g., system prompts, few-shot examples) | **User** | System prompts, few-shot examples for interacting with tools |
+| **Tools** | Executable functions that AI applications can invoke to perform actions (e.g. file operations, API calls, database queries) | **Model** | Querying a database, running a search, executing file operations |
+| **Resources** | Data sources that provide contextual information to AI applications (e.g. file contents, database records, API responses) | **Application** | File contents, database records, API responses |
+| **Prompts** | Reusable templates that help structure interactions with language models (e.g. system prompts, few-shot examples) | **User** | System prompts, few-shot examples for interacting with tools |
 
 A useful way to remember it: **tools are *model-initiated actions*, resources are *application-supplied context*, and prompts are *user-requested workflows*.** Each primitive type has associated methods for discovery (`*/list`), retrieval (`*/get`), and in some cases, execution (`tools/call`).
 
