@@ -12,7 +12,7 @@ The Model Context Protocol (MCP) is an **open-source standard for connecting AI 
 
 …enabling them to access key information and perform tasks. The official docs describe it as "a **USB-C port for AI applications**": just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems.
 
-**Why MCP matters:**
+**Why MCP matters：**
 
 - **Developers** — MCP reduces development time and complexity when building, or integrating with, an AI application or agent.
 - **AI applications or agents** — MCP gives them access to an ecosystem of data sources, tools and apps, which enhances their capabilities and improves the end-user experience.
