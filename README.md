@@ -10,7 +10,7 @@ The Model Context Protocol (MCP) is an **open-source standard for connecting AI 
 - **Tools** (e.g. search engines, calculators)
 - **Workflows** (e.g. specialized prompts)
 
-…enabling them to access key information and perform tasks. The official docs describe it as "a **USB-C port for AI applications**": just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems.
+enabling them to access key information and perform tasks. The official docs describe it as "a **USB-C port for AI applications**": just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems.
 
 **Why MCP matters:**
 
@@ -30,7 +30,7 @@ An MCP server exposes functionality through **three core building blocks (primit
 | **Resources** | Data sources that provide contextual information to AI applications (e.g. file contents, database records, API responses) | **Application** | File contents, database records, API responses |
 | **Prompts** | Reusable templates that help structure interactions with language models (e.g. system prompts, few-shot examples) | **User** | System prompts, few-shot examples for interacting with tools |
 
-A useful way to remember it: **tools are *model-initiated actions*, resources are *application-supplied context*, and prompts are *user-requested workflows*.** Each primitive type has associated methods for discovery (`*/list`), retrieval (`*/get`), and in some cases, execution (`tools/call`). An MCP server also exposes client-side primitives: elicitation (letting the server ask the user for input) and sampling (deprecated as of protocol version 2026-07-28).
+A useful way to remember it: **tools are *model-initiated actions*, resources are *application-supplied context*, and prompts are *user-requested workflows*.** Each primitive type has associated methods for discovery (`*/list`), retrieval (`*/get`), and in some cases, execution (`tools/call`).
 
 ## Sources
 
